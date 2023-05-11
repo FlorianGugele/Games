@@ -11,7 +11,7 @@ public class Objects extends BasicGame {
     public Objects(String title) {
         super(title);
     }
-ssu
+
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
         this.x = 100;
