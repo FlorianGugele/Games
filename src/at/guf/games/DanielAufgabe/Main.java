@@ -8,6 +8,11 @@ public class Main extends BasicGame {
     private float x;
     private float y;
     private float speed;
+    private boolean IsDown;
+
+    private float xc;
+    private float yc;
+    private boolean IsRight;
 
 
 
@@ -19,20 +24,43 @@ public class Main extends BasicGame {
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
         this.y=100;
-        this.speed=40.0f;
+        this.speed=10.0f;
+        this.IsDown = true;
+        this.xc = 100;
+
     }
 
     @Override
     public void update(GameContainer gameContainer, int i) throws SlickException {
-        this.y += (float)i/this.speed;
-        if (this.y >= 600){
+        if (this.y >= 100 && IsDown == false){
             this.y -= (float)i/this.speed;
+        }else {
+            IsDown = true;
+        }
+
+        if (this.y<= 600 && IsDown == true){
+            this.y += (float)i/this.speed;
+        }else {
+            IsDown = false;
+        }
+
+        if (this.xc >= 100 && IsRight==false){
+            this.xc -= (float)i/this.speed;
+        }else{
+            IsRight=true;
+        }
+
+        if (this.xc<=800 && IsRight==true){
+            this.xc += (float)i/this.speed;
+        } else{
+          IsRight=false;
         }
     }
 
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
         graphics.drawRect(this.x,this.y,100,100);
+        graphics.drawOval(this.xc,this.yc,50,50);
     }
 
     public static void main(String[] argv) {
