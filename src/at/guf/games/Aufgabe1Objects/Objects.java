@@ -5,12 +5,18 @@ import org.newdawn.slick.*;
 public class Objects extends BasicGame {
     private float xRec;
     private float yRec;
+    private float yCirc;
+    private float xOval;
     private float speed;
     private boolean IsDownRec = false;
     private boolean IsRightRec = true;
     private boolean IsLeftRec = false;
     private boolean IsUpRec = false;
-    private float xc;
+
+    private boolean IsUpCirc;
+    private boolean IsDownCirc;
+    private boolean IsRightOval;
+    private boolean IsLeftoval;
 
     public Objects(String title) {
         super(title);
@@ -21,33 +27,40 @@ public class Objects extends BasicGame {
         this.xRec = 100;
         this.yRec=100;
         this.speed = 10.0f;
+        this.xRec =100;
+        this.yCirc=100;
     }
 
     @Override
     public void update(GameContainer gameContainer, int i) throws SlickException {
-
+        System.out.println(xRec);
+        System.out.println(yRec);
         if (this.xRec<= 600 && IsRightRec == true){
             this.xRec += (float)i/this.speed;
-        }else {
+        }
+        if (this.xRec > 600 && IsRightRec == true ){
             IsRightRec = false;
             IsDownRec = true;
         }
 
+
         if (this.yRec <= 400 && IsDownRec ==true){
             this.yRec += (float)i/this.speed;
-        }else {
+        }
+        if (this.yRec > 400 && IsDownRec==true){
             IsDownRec = false;
             IsLeftRec = true;
         }
-        //Riedmann fragen an was es liegt
+
+
         if (this.xRec >=100 && IsLeftRec == true){
             this.xRec -= (float)i/this.speed;
-            System.out.println("s");
-        }else {
+        }
+        if (this.yRec <100 && IsLeftRec == true){
             IsLeftRec = false;
             IsUpRec = true;
-            System.out.println("j");
         }
+
 
 
 
@@ -57,6 +70,7 @@ public class Objects extends BasicGame {
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
         graphics.drawRect(this.xRec,this.yRec,100,100);
         graphics.drawOval(10,10,50,50);
+        graphics.drawOval(10,10,10,5);
     }
 
     public static void main(String[] argv) {
