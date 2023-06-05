@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="eeecc374-2f49-41db-98a7-4767e2469b53" name="Default Changelist" comment="OO-Games Start">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/guf/games/fistgame/Circles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/guf/games/fistgame/Circles.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/guf/games/fistgame/ObjectGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/guf/games/fistgame/ObjectGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/at/guf/games/fistgame/Ovales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/guf/games/fistgame/Ovales.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/at/guf/games/fistgame/Rectangles.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/at/guf/games/fistgame/Rectangles.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,20 +33,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/HTL Dornbirn 3. Jahr/SWP/Projekte/src/at/gfl/Games/Games",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/HTL Dornbirn 3. Jahr/SWP/Projekte/src/at/gfl/Games/Games&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="at.guf.games.Aufgabe1Objects" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AlphaMapTest">
+  <component name="RunManager">
     <configuration name="AlphaMapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.newdawn.slick.tests.AlphaMapTest" />
       <module name="Slick2DTemplate" />

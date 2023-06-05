@@ -1,8 +1,11 @@
 package at.guf.games.fistgame;
 
-import java.awt.*;
+import org.newdawn.slick.Graphics;
+import org.newdawn.slick.SlickException;
+
 
 public class Rectangles {
+
 
     private enum DIRECTION {RIGHT,DOWN,LEFT,UP};
     private float x;
